@@ -6,7 +6,7 @@ import { zh, search as zhSearch } from './config/zh.mjs';
 export default defineConfig({
   base: '/',
   srcDir: './src',
-  outDir: './dist',
+  outDir: './docs',
   // publicDir: './public',
   cleanUrls: true,
   metaChunk: true,
