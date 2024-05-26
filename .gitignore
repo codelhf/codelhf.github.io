@@ -1,5 +1,4 @@
 .idea/
 .vscode/
 .vitepress/cache/
-dist/
 node_modules

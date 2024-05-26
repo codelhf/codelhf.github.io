@@ -3,9 +3,9 @@
 
 ## Gitee拉取Github仓库
 直接在Gitee中创建一个项目，然后再最后一行导入Github项目就阔以啦！
-![](/imgs/导入Github项目.png)
+![](https://cdn.jsdelivr.net/gh/codelhf/codelhf.github.io@main/src/public/images/202405261625034.png)
 去到你的Github仓库复制https链接，直接粘贴就阔以啦
-![](/imgs/https链接.png)
+![](https://cdn.jsdelivr.net/gh/codelhf/codelhf.github.io@main/src/public/images/202405261630321.png)
 到此为止，在Gitee就已经创建好仓库啦
 
 ## 本地配置推送方式
@@ -84,9 +84,9 @@ git push的时有时候会出现错误 [rejected] master -> master (fetch first)
 
 **第一：公钥配置文件，目录是： C:\Users\user\.ssh 下的 config 文件**
 现在多了gitee，所以对应的Host也要增加，如下图
-![](/imgs/git-config.png)
+![](https://cdn.jsdelivr.net/gh/codelhf/codelhf.github.io@main/src/public/images/202405261701299.png)
 我这里是两个ssh-key都会被Github和Gitee共用，正常来说是一个ssh-key指向一个仓库即可，譬如第一个key的Host配成Github的，第二个Key的Host配成Gitee
-![](/imgs/git-host.png)
+![](https://cdn.jsdelivr.net/gh/codelhf/codelhf.github.io@main/src/public/images/202405261702100.png)
 
 **第二：需要修改在上面配置过的 config 文件，它在你的项目目录下的 .git 文件夹下**
 原本只有一个ssh-key时，你的配置文件可能是这样的
