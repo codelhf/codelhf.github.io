@@ -1,0 +1,14 @@
+{
+  "name": "codelhf.io",
+  "version": "1.0.0",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.14.3",
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.1.3"
+  }
+}
