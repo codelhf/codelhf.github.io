@@ -1,4 +1,4 @@
-# Git将项目从本地统一推送到GitHub和Gitee
+# Git将项目从本地统一推送到Github和Gitee
 
 ## 本地配置推送方式
 - 方式一：定义不同的远程仓库名称，然后分别推送 多次推送，配了几个远程仓库就推送几次
@@ -32,7 +32,8 @@ git remote add gitee git@gitee.com:xxx/xxx.git
 - **3.执行以下命令，可以看到配置的两个仓库**
 ```shell
 git remote
-
+```
+```shell
 origin
 gitee
 ```
@@ -63,7 +64,8 @@ git remote set-url --add origin git@gitee.com:xxx/xxx.git
 - **3.执行以下命令，可以看到配置的两个仓库**
 ```shell
 git remote get-url --all origin
-
+```
+```shell
 git@github.com:xxx/xxx.git
 git@gitee.com:xxx/xxx.git
 ```
