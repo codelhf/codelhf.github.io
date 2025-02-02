@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /zh/guide/git&github/github-pages
+      link: /zh/guide/git&github/git-github-gitee
     - theme: alt
       text: github
       link: https://github.com/codelhf

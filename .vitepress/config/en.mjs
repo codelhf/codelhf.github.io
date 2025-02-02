@@ -1,7 +1,5 @@
 import { createRequire } from 'module'
 import { defineConfig } from 'vitepress'
-import fs from 'fs'
-import path from 'path'
 
 const require = createRequire(import.meta.url)
 const pkg = require('../../package.json')
@@ -14,7 +12,7 @@ export const en = defineConfig({
     nav: [
       {
         text: 'Guide',
-        link: '/en/guide/what-is-vitepress',
+        link: '/en/guide/git&github/git-github-gitee',
         activeMatch: '/en/guide/'
       },
       {
@@ -38,8 +36,14 @@ export const en = defineConfig({
     ],
 
     sidebar: {
-      '/en/guide/': { base: '/en/guide/', items: sidebarGuide() },
-      '/en/reference/': { base: '/en/reference/', items: sidebarReference() }
+      '/en/guide/': {
+        base: '/en/guide/',
+        items: sidebarGuide()
+      },
+      '/en/reference/': {
+        base: '/en/reference/',
+        items: sidebarReference()
+      }
     },
 
     footer: {
@@ -58,14 +62,18 @@ function sidebarGuide() {
   return [
     {
       text: 'Introduction',
-      collapsed: false,
       base: '/en/guide/git&github/',
+      collapsed: false,
       items: [
         { text: 'Git同时推送到Github和Gitee', link: 'git-github-gitee' },
         { text: '使用Github Pages部署Vue项目', link: 'github-pages' }
       ]
     },
-    { text: 'Config & API Reference', base: '/en/reference/', link: 'site-config' }
+    {
+      text: 'Config & API Reference',
+      base: '/en/reference/',
+      link: 'site-config'
+    }
   ]
 }
 

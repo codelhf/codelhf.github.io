@@ -38,8 +38,14 @@ export const zh = defineConfig({
     ],
 
     sidebar: {
-      '/zh/guide/': { base: '/zh/guide/', items: sidebarGuide() },
-      '/zh/reference/': { base: '/zh/reference/', items: sidebarReference() }
+      '/zh/guide/': {
+        base: '/zh/guide/',
+        items: sidebarGuide()
+      },
+      '/zh/reference/': {
+        base: '/zh/reference/',
+        items: sidebarReference()
+      }
     },
 
     footer: {
@@ -82,14 +88,18 @@ function sidebarGuide() {
   return [
     {
       text: '简介',
-      collapsed: false,
       base: '/zh/guide/git&github/',
+      collapsed: false,
       items: [
         { text: 'Git同时推送到Github和Gitee', link: 'git-github-gitee' },
         { text: '使用Github Pages部署Vue项目', link: 'github-pages' }
       ]
     },
-    { text: '配置和 API 参考', base: '/zh/reference/', link: 'site-config' }
+    {
+      text: '配置和 API 参考',
+      base: '/zh/reference/',
+      link: 'site-config'
+    }
   ]
 }
 
@@ -153,25 +163,19 @@ export const search = {
           titleText: '无法获取结果',
           helpText: '你可能需要检查你的网络连接'
         },
-        footer: {
-          selectText: '选择',
-          navigateText: '切换',
-          closeText: '关闭',
-          searchByText: '搜索提供者'
-        },
         noResultsScreen: {
           noResultsText: '无法找到相关结果',
           suggestedQueryText: '你可以尝试查询',
           reportMissingResultsText: '你认为该查询应该有结果？',
           reportMissingResultsLinkText: '点击反馈'
+        },
+        footer: {
+          selectText: '选择',
+          navigateText: '切换',
+          closeText: '关闭',
+          searchByText: '搜索提供者'
         }
       }
     }
   }
-}
-
-sidebar()
-function sidebar() {
-  const files = fs.readdirSync(path.resolve(__dirname, '../../src/zh/'))
-  console.log(files)
 }
