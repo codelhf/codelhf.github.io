@@ -22,7 +22,7 @@ jobs:
 
       # Install dependencies
       - name: Install Dependencies
-        run: npm install && npm run build
+        run: npm install && npm run docs:build
 
       # Deploy to GitHub Pages
       - name: Deploy
